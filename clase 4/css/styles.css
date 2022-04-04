@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+p {
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+/** Vamos a darle un ancho  y vamos hacer q el menu siempre se quede fijo y se muestre por encima de las imagenes**/
+.head {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.navegacion {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+nav ul li:hover {
+    background: #e42b25;
+  }
+/**el menú de navegación tapa una parte del contenido,
+ esto lo resolvemos muy fácil, basta con agregar un padding al section="contenido".**/
+.contenido {
+    padding-top: 80px; 
+    background-color: rgba(255,255,255,0.5);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 3.5rem;
+  }
+
+  /**permite delimitar el tamaño ancho tanto del menu, como del contenido o texto,
+   en el ejemplo a continuación puedes explorar el código y encontraras este section junto con sus estilos.**/
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  }
+
+.imagen-fondo {
+    background-image: url(../img/html-color-codes-color-tutorials-hero.jpg);
+    
+    /** establecer el tamaño y no permitir repetición de la imagen**/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 120vh;
+   
+    
+  padding: 40px;
+  border: 25px solid rgb(255,255,255,0.5);
+}
